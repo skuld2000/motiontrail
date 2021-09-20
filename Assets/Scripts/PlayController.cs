@@ -5,13 +5,6 @@ using UnityEngine;
 public class PlayController : MonoBehaviour
 {
 	public Animator animator;
-	SMRMotionTrailCreator trailCreator;
-
-	private void Start()
-	{
-		trailCreator = GetComponent<SMRMotionTrailCreator>();
-		trailCreator.Setup(transform.GetComponentInChildren<SkinnedMeshRenderer>(), 8, 0.5f);
-	}
 
 	private void Update()
 	{
@@ -43,13 +36,9 @@ public class PlayController : MonoBehaviour
 
 		if (Input.GetKeyDown("1"))
 		{
-			trailCreator.Create(true);
 		}
 		else if (Input.GetKeyDown("2"))
 		{
-			trailCreator.Create(false);
-
-
 		}
 		
 	}

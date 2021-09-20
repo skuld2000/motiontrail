@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44658017, g: 0.49641556, b: 0.57481843, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657958, g: 0.4964149, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -309,7 +309,6 @@ GameObject:
   m_Component:
   - component: {fileID: 546762732}
   - component: {fileID: 546762731}
-  - component: {fileID: 546762733}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -346,19 +345,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &546762733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 546762730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08b4413dc03dd5a4b9f051b6b4711980, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trailImageMaterial: {fileID: 2100000, guid: 0bcdca085445acc4aa21304ffa02deba, type: 2}
 --- !u!1 &718876427
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,6 +494,7 @@ GameObject:
   - component: {fileID: 1283559305}
   - component: {fileID: 1283559304}
   - component: {fileID: 1283559303}
+  - component: {fileID: 1283559307}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -585,12 +572,115 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1283559302}
   m_LocalRotation: {x: -0, y: 2.3625546e-13, z: -6.3948846e-14, w: -1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 546762732}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1283559307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283559302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b408815ef50ee4a7ebaa60fef884c323, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _motionTrailMaterial: {fileID: 2100000, guid: beec343ae6dc52849a7759822010337c, type: 2}
+  _motionTrailGradient:
+    serializedVersion: 2
+    key0: {r: 0.3, g: 1, b: 1, a: 1}
+    key1: {r: 0.7, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  _colorUpdateSpeed: 1
+  _bakingCycle: 0.1
+  _data:
+    duration: 1
+    shaderColorName: _Color
+    shaderAlphaName: _Alpha
+  _containChildrenMeshes: 1
+--- !u!1 &1346864720 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8592876449704463762, guid: 6b5d591dbb72ac04a80d42bbb710cb7a, type: 3}
+  m_PrefabInstance: {fileID: 1474289662}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1346864721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346864720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c611b28d139484985044ec71031a9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _motionTrailMaterial: {fileID: 2100000, guid: beec343ae6dc52849a7759822010337c, type: 2}
+  _motionTrailGradient:
+    serializedVersion: 2
+    key0: {r: 0.3, g: 1, b: 1, a: 1}
+    key1: {r: 0.7, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  _colorUpdateSpeed: 1
+  _bakingCycle: 0.1
+  _data:
+    duration: 1
+    shaderColorName: _Color
+    shaderAlphaName: _Alpha
+  _containChildrenMeshes: 1
 --- !u!1001 &1474289662
 PrefabInstance:
   m_ObjectHideFlags: 0
