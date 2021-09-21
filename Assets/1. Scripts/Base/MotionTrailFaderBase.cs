@@ -55,7 +55,7 @@ public abstract class MotionTrailFaderBase : MonoBehaviour
                 TargetTransformList[i].position,
                 TargetTransformList[i].rotation
             );
-            ChildrenTransformList[i].localScale = TargetTransformList[i].localScale;
+            ChildrenTransformList[i].localScale = TargetTransformList[i].lossyScale;
         }
     }
 
